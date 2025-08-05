@@ -4,18 +4,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1
-df = None
+df = pd.read_csv(r'medical-data-visualizer/medical_examination.csv')
 
 # 2
-df['overweight'] = None
+ibm = df['weight'] / ((df['height'] / 100) ** 2)
+df['overweight'] = (ibm > 25).astype(int)
 
 # 3
-
+df['cholesterol'] = (df['cholesterol'] > 1).astype(int)
+df['gluc'] = (df['gluc'] > 1).astype(int)
 
 # 4
 def draw_cat_plot():
     # 5
-    df_cat = None
+    df_cat = df.melt(id_vars=['cardio'], 
+                       value_vars=['cholesterol', 'gluc', 'smoke', 'alco', 'active', 'overweight'],
+                       var_name='Metric', 
+                       value_name='Value')
 
 
     # 6
