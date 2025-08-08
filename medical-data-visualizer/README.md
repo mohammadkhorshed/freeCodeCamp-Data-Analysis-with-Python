@@ -55,7 +55,7 @@ Creates a categorical plot to show the counts of features (`cholesterol`, `gluc`
 
 #### 📷 Categorical Plot Preview
 
-![Categorical Plot](medical-data-visualizer/catplot.png)
+![Categorical Plot](./catplot.png)
 
 ---
 
@@ -68,7 +68,7 @@ Generates a heatmap of the correlation matrix from the cleaned dataset.
 
 #### 📷 Heatmap Preview
 
-![Heatmap](medical-data-visualizer/heatmap.png)
+![Heatmap](./heatmap.png)
 
 ---
 
