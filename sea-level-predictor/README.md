@@ -20,7 +20,7 @@ The script:
 - **Step 5:** Save the final graph for review.
 
 ## 📊 Example Output
-![Sea Level Plot](sea-level-predictor/sea_level_plot.png)
+![Sea Level Plot](sea_level_plot.png)
 
 ## 🛠️ Requirements
 - Python 3.x
